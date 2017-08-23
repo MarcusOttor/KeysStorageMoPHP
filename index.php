@@ -35,6 +35,12 @@ if (isset($package) && isset($type)) {
                 echo json_encode($row['vungle']);
             } else if ($type == 9) {
                 echo json_encode($row['banner_appnext']);
+            } else if ($type == 10) {
+                echo json_encode($row['chartboost_app']);
+            } else if ($type == 11) {
+                echo json_encode($row['chartboost_signature']);
+            } else if ($type == 12) {
+                echo json_encode($row['unity']);
             }
             exit();
         }
