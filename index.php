@@ -41,6 +41,14 @@ if (isset($package) && isset($type)) {
                 echo json_encode($row['chartboost_signature']);
             } else if ($type == 12) {
                 echo json_encode($row['unity']);
+            } else if ($type == 13) {
+                echo json_decode($row['admob_app']);
+            } else if ($type == 14) {
+                echo json_decode($row['admob_banner']);
+            } else if ($type == 15) {
+                echo json_decode($row['admob_interstitial']);
+            } else if ($type == 16) {
+                echo json_decode($row['admob_video']);
             }
             exit();
         }
